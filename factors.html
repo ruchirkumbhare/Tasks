@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Factors of a Number</title>
+
+        <script type="text/javascript">
+         function fact()
+         {
+             var x = document.getElementById("number").value;
+             document.write("<h2>The factors of the entered number : "+x+" are</h2>")    
+             for(var i=2; i<=(x/2); i++)
+             {
+                 if(x%i==0)
+                  {
+                      document.write("<h2>"+i+"</h2>")
+                  }
+             }
+         }
+        
+        </script>
+    </head>
+
+    <body>
+        <h1>Enter any number to get its factors</h1>
+        <input id="number" placeholder="Enter a number">
+        <br>
+        <button onclick="fact()" id="btn1">Click me</button>
+        </body>
+</html>
